@@ -1,53 +1,52 @@
 /* Estilos gerais */
 body {
   font-family: 'Arial', sans-serif;
-  background: url('https://images.unsplash.com/photo-1568483967-9a49a89fdf29') no-repeat center center fixed;
+  background-image: url('https://www.w3schools.com/w3images/mountains.jpg'); /* Você pode substituir por uma imagem mais relacionada a filmes */
   background-size: cover;
+  background-position: center;
   color: #fff;
   margin: 0;
   padding: 0;
-  height: 100vh;
 }
 
+/* Container principal */
 .container {
   max-width: 900px;
-  margin-top: 50px;
+  margin-top: 100px;
+  background: rgba(0, 0, 0, 0.7); /* Fundo semitransparente para contraste */
   padding: 30px;
-  background-color: rgba(0, 0, 0, 0.7);
-  /* Fundo escuro para contraste */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
 }
 
-/* Cabeçalho */
+/* Título principal */
 h1 {
   text-align: center;
-  color: #ffcc00;
-  /* Amarelo dourado para destaque */
+  color: #f8d347; /* Cor dourada para dar destaque */
   font-size: 36px;
   margin-bottom: 30px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-h3 {
-  color: #ffcc00;
-  text-align: center;
-  margin-top: 30px;
-}
-
-/* Input de busca */
+/* Estilo do campo de busca */
 #movieTitle {
   width: 100%;
-  padding: 10px;
-  border: 2px solid #ffcc00;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #f8d347;
+  border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.1);
   color: #fff;
-  border-radius: 5px;
   font-size: 16px;
-  margin-bottom: 20px;
 }
 
 #movieTitle::placeholder {
-  color: #bbb;
+  color: #ddd;
+}
+
+#movieTitle:focus {
+  outline: none;
+  border-color: #f8d347;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Lista de sugestões */
@@ -55,82 +54,90 @@ h3 {
   max-height: 200px;
   overflow-y: auto;
   margin-top: 10px;
+  border: 1px solid #f8d347;
   border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .list-group-item {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: #fff;
-  border: 1px solid #ffcc00;
-  padding: 12px;
   cursor: pointer;
-}
-
-.list-group-item:hover {
-  background-color: #ffcc00;
-  color: #333;
-}
-
-/* Tabela de filmes */
-.table {
-  margin-top: 30px;
-  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
   color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.table th,
-.table td {
-  text-align: center;
-  padding: 15px;
-}
-
-.table th {
-  background-color: #ffcc00;
-  color: #333;
-  font-size: 18px;
-}
-
-.table tbody tr {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.table tbody tr:hover {
-  background-color: #ffcc00;
-  color: #333;
+.list-group-item:hover {
+  background-color: #f8d347;
 }
 
-/* Botões */
-.btn-primary {
-  background-color: #ffcc00;
+/* Estilo da tabela */
+.table {
+  width: 100%;
+  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  color: #fff;
   border: none;
-  color: #333;
-  font-size: 18px;
-  padding: 10px 20px;
+}
+
+.table th, .table td {
+  padding: 15px;
+  text-align: center;
+}
+
+.table th {
+  background-color: #f8d347;
+  color: #000;
+  font-weight: bold;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #444;
+}
+
+.table tbody tr:hover {
+  background-color: #555;
+}
+
+/* Ações de Editar e Excluir */
+.btn-sm {
+  padding: 5px 10px;
+  font-size: 14px;
+  margin: 0 5px;
   border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s;
+}
+
+.btn-edit {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+}
+
+.btn-edit:hover {
+  background-color: #218838;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+}
+
+/* Botão de Adicionar Filme */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .btn-primary:hover {
-  background-color: #e0a800;
-}
-
-/* Botões de editar e excluir */
-.btn-sm {
-  background-color: #ff5733;
-  color: white;
-  border-radius: 50%;
-  padding: 8px 12px;
-  font-size: 14px;
-}
-
-.btn-sm:hover {
-  background-color: #c0392b;
-}
-
-.btn-sm:focus {
-  outline: none;
+  background-color: #0056b3;
 }
