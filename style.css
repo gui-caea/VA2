@@ -1,0 +1,136 @@
+/* Estilos gerais */
+body {
+  font-family: 'Arial', sans-serif;
+  background: url('https://images.unsplash.com/photo-1568483967-9a49a89fdf29') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  margin-top: 50px;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Fundo escuro para contraste */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Cabeçalho */
+h1 {
+  text-align: center;
+  color: #ffcc00;
+  /* Amarelo dourado para destaque */
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  color: #ffcc00;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Input de busca */
+#movieTitle {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ffcc00;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#movieTitle::placeholder {
+  color: #bbb;
+}
+
+/* Lista de sugestões */
+#suggestions {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.list-group-item {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: 1px solid #ffcc00;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.list-group-item:hover {
+  background-color: #ffcc00;
+  color: #333;
+}
+
+/* Tabela de filmes */
+.table {
+  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.table th,
+.table td {
+  text-align: center;
+  padding: 15px;
+}
+
+.table th {
+  background-color: #ffcc00;
+  color: #333;
+  font-size: 18px;
+}
+
+.table tbody tr {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.table tbody tr:hover {
+  background-color: #ffcc00;
+  color: #333;
+}
+
+/* Botões */
+.btn-primary {
+  background-color: #ffcc00;
+  border: none;
+  color: #333;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #e0a800;
+}
+
+/* Botões de editar e excluir */
+.btn-sm {
+  background-color: #ff5733;
+  color: white;
+  border-radius: 50%;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.btn-sm:hover {
+  background-color: #c0392b;
+}
+
+.btn-sm:focus {
+  outline: none;
+}
